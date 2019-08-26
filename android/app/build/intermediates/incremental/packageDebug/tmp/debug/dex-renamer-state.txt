@@ -1,0 +1,4 @@
+#Fri Aug 23 20:03:42 IST 2019
+base.0=/var/www/html/demo/electrode/MovieListMiniApp/android/app/build/intermediates/dex/debug/mergeDexDebug/out
+renamed.0=classes.dex
+path.0=classes.dex
