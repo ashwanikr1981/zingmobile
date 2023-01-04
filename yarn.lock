@@ -2020,6 +2020,11 @@ eventemitter3@^3.0.0:
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-3.1.2.tgz#2d3d48f9c346698fce83a85d7d664e98535df6e7"
   integrity sha512-tvtQIeLVHjDkJYnzf2dgVMxfuSGJeM/7UCG17TT4EumTfNtF+0nebF/4zWOIkCreAbtNqhGEboB6BWrwqNaw4Q==
 
+events@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/events/-/events-1.1.1.tgz#9ebdb7635ad099c70dcc4c2a1f5004288e8bd924"
+  integrity sha512-kEcvvCBByWXGnZy6JUlgAp2gBIUjfCAV6P6TgT1/aaQKcmuAEC4OZTV1I4EWQLz2gxZw76atuVyvHhTxvi0Flw==
+
 exec-sh@^0.2.0:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/exec-sh/-/exec-sh-0.2.2.tgz#2a5e7ffcbd7d0ba2755bdecb16e5a427dfbdec36"
@@ -3467,11 +3472,9 @@ json-stringify-safe@~5.0.1:
   integrity sha1-Epai1Y/UXxmg9s4B1lcB4sc1tus=
 
 json5@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/json5/-/json5-2.1.0.tgz#e7a0c62c48285c628d20a10b85c89bb807c32850"
-  integrity sha512-8Mh9h6xViijj36g7Dxi+Y4S6hNGV96vcJZr/SrlHh1LR/pEn/8j/+qIBbs44YKl69Lrfctp4QD+AdWLTMqEZAQ==
-  dependencies:
-    minimist "^1.2.0"
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.3.tgz#78cd6f1a19bdc12b73db5ad0c61efd66c1e29283"
+  integrity sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==
 
 jsonfile@^2.1.0:
   version "2.4.0"
@@ -4844,6 +4847,36 @@ react-is@^16.8.1, react-is@^16.8.3, react-is@^16.8.4:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.9.0.tgz#21ca9561399aad0ff1a7701c01683e8ca981edcb"
   integrity sha512-tJBzzzIgnnRfEm046qRcURvwQnZVXmuCbscxUO5RWrGTXpon2d4c8mI0D8WE6ydVIm29JiLB6+RslkIvym9Rjw==
 
+react-native-electrode-bridge@1.5.x:
+  version "1.5.27"
+  resolved "https://registry.yarnpkg.com/react-native-electrode-bridge/-/react-native-electrode-bridge-1.5.27.tgz#28396b2bf647252cd50437eec741fbb912ee0dea"
+  integrity sha512-eYtg9PjnQBJN25EqgkkALjWAFaFuVQvhlRl3WiBt3nZPFQRAAv8aVFCh5t1Bbn7BiEVkDcw+vIUSWbTkUROVng==
+  dependencies:
+    events "^1.1.1"
+    uuid "^3.0.0"
+
+react-native-ernmovie-api-impl@0.0.16:
+  version "0.0.16"
+  resolved "https://registry.yarnpkg.com/react-native-ernmovie-api-impl/-/react-native-ernmovie-api-impl-0.0.16.tgz#d2441291b0947904074195ab434f6025ca60475b"
+  integrity sha512-CScth/K2cMIFv77MCCCTDw5vqp7fovnLwvRA6bR2NfhIbbNWrtE/MgGFQiMefSWpawWHbLKhXcXdx6sPtNMf7A==
+  dependencies:
+    react-native-electrode-bridge "1.5.x"
+    react-native-ernmovie-api "0.0.11"
+
+react-native-ernmovie-api@0.0.11:
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/react-native-ernmovie-api/-/react-native-ernmovie-api-0.0.11.tgz#1715b1bd6e6bb976193b40d33038640be00430e9"
+  integrity sha512-NNlz4ZKbqt9rjTUvVIbuyjWgW6vBhbSke5qhOT5iwzaHsnRs57+j3beQvMEHgovDgZrgllsR7G47hzHOvtbtYg==
+  dependencies:
+    react-native-electrode-bridge "1.5.x"
+
+react-native-ernnavigation-api@0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/react-native-ernnavigation-api/-/react-native-ernnavigation-api-0.0.5.tgz#7f6f4b25f3ef1cabe151ae532505b49eb4032732"
+  integrity sha512-lOV0iMHzlkBoPz/H9k3e13b8vaf2LNR9PhisCY4Bf5arv6/ogn0lScdkNyIIl3cV5ftCCrVDFYllDA/SEP4BvQ==
+  dependencies:
+    react-native-electrode-bridge "1.5.x"
+
 react-native@0.59.10:
   version "0.59.10"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.59.10.tgz#352f381e382f93a0403be499c9e384bf51c2591c"
@@ -5947,6 +5980,11 @@ utils-merge@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
+
+uuid@^3.0.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
+  integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
 
 uuid@^3.3.2:
   version "3.3.3"
